@@ -7,9 +7,15 @@
 <html>
 <head>
 <meta http-equiv="Content-Language" content="ko" >
-<title>데이터 가져오기~</title>
+<title>데이터 등록하기</title>
 </head>
 <body>
-결과 값 : ${result.tempVal}
+* 등록폼
+<form action="/temp/insert.do" method="post" name="frm">
+	<label for="tempVal">값 정보: </label>
+	<input type="text" id="tempVal" name="tempVal">
+	<br/>
+	<button type="submit">등록</button>
+</form>
 </body>
 </html>

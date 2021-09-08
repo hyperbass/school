@@ -10,6 +10,21 @@
 <title>데이터 가져오기~</title>
 </head>
 <body>
-결과 값 : ${result.tempVal}
+<table border="1">
+	<thead>
+		<tr>
+			<td>TEMP_ID</td>
+			<td>TEMP_VAL</td>
+		</tr>
+	</thead>
+	<tbody>
+		<c:forEach var="item" items="${list}">
+			<tr>
+				<td>${item.tempId}</td>
+				<td>${item.tempVal}</td>
+			</tr>
+		</c:forEach>
+	</tbody>
+</table>
 </body>
 </html>
